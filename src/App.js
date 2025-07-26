@@ -3,11 +3,14 @@ import { Mail, Github, Linkedin } from "lucide-react";
 import AWSCloudPracticioner from "./images/AWSCloudPracticioner.png";
 import free_code_camp_logo from "./images/free_code_camp_logo.jpeg"; 
 import hackerrank_logo from "./images/hackerrank_logo.jpeg"; 
-import British_Council_logo from "./images/British_Council_logo.jpg"; 
+import British_Council_logo from "./images/British_Council_logo.jpg";
+
+
 
 export default function Portfolio() {
   return (
     <main className="min-h-screen bg-white text-gray-800 p-6">
+      <a href="/contact" className="text-blue-600 hover:underline">Contact Me</a>
       <div className="max-w-4xl mx-auto">
         <header className="mb-12 text-center">
           <h1 className="text-4xl font-bold mb-2">Ali Yusuf Akbay</h1>
