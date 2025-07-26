@@ -16,38 +16,39 @@ export default function Contact() {
   return (
     <div className="max-w-xl mx-auto p-6">
       <h2 className="text-2xl font-bold mb-4">Contact Me</h2>
-      <form onSubmit={handleSubmit} className="space-y-4">
+      <form
+        action="https://formspree.io/f/xpwldbna"
+        method="POST"
+        className="space-y-4"
+        >
         <input
-          type="text"
-          name="name"
-          placeholder="Your Name"
-          value={formData.name}
-          onChange={handleChange}
-          className="w-full border rounded px-3 py-2"
-          required
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            className="w-full border rounded px-3 py-2"
+            required
         />
         <input
-          type="email"
-          name="email"
-          placeholder="Your Email"
-          value={formData.email}
-          onChange={handleChange}
-          className="w-full border rounded px-3 py-2"
-          required
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            className="w-full border rounded px-3 py-2"
+            required
         />
         <textarea
-          name="message"
-          placeholder="Your Message"
-          value={formData.message}
-          onChange={handleChange}
-          className="w-full border rounded px-3 py-2"
-          rows="4"
-          required
+            name="message"
+            placeholder="Your Message"
+            rows="4"
+            className="w-full border rounded px-3 py-2"
+            required
         />
-        <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
-          Send
+        <button
+            type="submit"
+            className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+        >
+            Send
         </button>
-      </form>
+        </form>
     </div>
   );
 }
