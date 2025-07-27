@@ -1,6 +1,7 @@
 import React from "react";
 import { Mail, Github, Linkedin } from "lucide-react";
 import AWSCloudPracticioner from "./images/AWSCloudPracticioner.png";
+import Sakarya_logo from "./images/Sakarya_logo.jpg";
 import free_code_camp_logo from "./images/free_code_camp_logo.jpeg"; 
 import hackerrank_logo from "./images/hackerrank_logo.jpeg"; 
 import British_Council_logo from "./images/British_Council_logo.jpg";
@@ -34,6 +35,24 @@ export default function Portfolio() {
           </p>
         </section>
         <br></br>
+        <section className="mb-12">
+          <h2 className="text-2xl font-semibold mb-4">Education</h2>
+          <div className="flex flex-col md:flex-row items-center gap-6 border rounded-xl shadow p-6 bg-gray-50">
+            <a href="https://cs.sakarya.edu.tr/" target="_blank" rel="noopener noreferrer">
+              <img
+                src={Sakarya_logo}
+                alt="Sakarya University Logo"
+                className="w-24 h-24 object-contain rounded mb-4 md:mb-0"
+              />
+            </a>
+            <div>
+              <h3 className="text-xl font-bold mb-2">Sakarya University</h3>
+              <p className="text-gray-700 mb-1">B.Sc. in Computer Science/Engineering</p>
+              <p className="text-gray-700 mb-1">GPA: <span className="font-semibold">3.22 / 4.00</span></p>
+              <p className="text-gray-600">Graduated</p>
+            </div>
+          </div>
+        </section>
         <section className="mb-12">
           <h2 className="text-2xl font-semibold mb-4">Projects</h2>
           <div className="grid gap-6 md:grid-cols-2">
