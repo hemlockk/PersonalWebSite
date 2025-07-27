@@ -9,6 +9,9 @@ import British_Council_logo from "./images/British_Council_logo.jpg";
 
 
 export default function Portfolio() {
+  const [showJr, setShowJr] = React.useState(false);
+  const [showPartTime, setShowPartTime] = React.useState(false);
+  const [showIntern, setShowIntern] = React.useState(false);
   return (
     <main className="min-h-screen bg-white text-gray-800 p-6">
       
@@ -36,6 +39,85 @@ export default function Portfolio() {
         </section>
         <br></br>
         <section className="mb-12">
+      <section className="mb-12">
+        <h2 className="text-2xl font-semibold mb-4">Experience</h2>
+        <div className="space-y-6">
+          <div className="border rounded-xl shadow p-6 bg-gray-50">
+            <div className="flex items-center justify-between mb-2">
+              <h3 className="text-xl font-bold">Jr. Software Engineer</h3>
+              <button
+                onClick={() => setShowJr((prev) => !prev)}
+                className="text-blue-600 underline font-semibold focus:outline-none"
+              >
+                {showJr ? "Hide" : "Show"}
+              </button>
+            </div>
+            <p className="text-gray-700 mb-1">P.I. Works, Inc. &mdash; Istanbul, Remote</p>
+            <p className="text-gray-600 mb-1">08/2023 &ndash; Present</p>
+            {showJr && (
+              <>
+                <ul className="list-disc list-inside text-gray-700 mt-2 space-y-1">
+                  <li>Communicated with a global client base regarding products and solutions over Jira.</li>
+                  <li>Managed SaaS applications supporting dynamic web services on Windows & Linux (CentOS, RedHat).</li>
+                  <li>Resolved complex software issues using advanced debugging and troubleshooting methods.</li>
+                  <li>Automated operations using PL/SQL, bash, and PowerShell to improve response times and reduce manual work.</li>
+                  <li>Designed and optimized complex SQL queries for data analysis and monitoring.</li>
+                  <li>Created Python tools to facilitate support operations and ease on-call duties.</li>
+                  <li>Deployed software upgrades, installed microservices in Docker containers, and configured REST API endpoints.</li>
+                  <li>Optimized and managed ETL operations for stable and reliable data flow.</li>
+                  <li>Developed networking solutions, including load balancing with HAProxy and firewall rules for secure data flow.</li>
+                  <li>Utilized monitoring and alerting tools like Zabbix to proactively address system issues.</li>
+                  <li>Diagnosed performance bottlenecks and system issues by analyzing logs and metrics.</li>
+                  <li>Led a team through a successful migration project from Oracle to ClickHouse database.</li>
+                  <li>Collaborated with other teams on software development, testing, and release.</li>
+                  <li>Developed and implemented timely solutions & workarounds in line with strict SLAs.</li>
+                  <li>Utilized Ansible for change and configuration management to streamline setup processes.</li>
+                  <li>Shared expertise and documented best practices on Confluence, actively contributing to team knowledge exchange.</li>
+                </ul>
+                <a href="https://piworks.net/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline mt-2 inline-block">Company Website</a>
+              </>
+            )}
+          </div>
+          <div className="border rounded-xl shadow p-6 bg-gray-50">
+            <div className="flex items-center justify-between mb-2">
+              <h3 className="text-xl font-bold">Part-Time Software Engineer</h3>
+              <button
+                onClick={() => setShowPartTime((prev) => !prev)}
+                className="text-blue-600 underline font-semibold focus:outline-none"
+              >
+                {showPartTime ? "Hide" : "Show"}
+              </button>
+            </div>
+            <p className="text-gray-700 mb-1">P.I. Works, Inc.</p>
+            <p className="text-gray-600 mb-1">10/2022 &ndash; 08/2023</p>
+            {showPartTime && (
+              <ul className="list-disc list-inside text-gray-700 mt-2 space-y-1">
+                <li>Worked collaboratively to meet KPI targets.</li>
+                <li>Successfully passed a final 4-stage interview after 5 months.</li>
+                <li>Achieved: One of 2 out of 6 candidates who qualified for a full-time position.</li>
+              </ul>
+            )}
+          </div>
+          <div className="border rounded-xl shadow p-6 bg-gray-50">
+            <div className="flex items-center justify-between mb-2">
+              <h3 className="text-xl font-bold">Software Engineering Intern</h3>
+              <button
+                onClick={() => setShowIntern((prev) => !prev)}
+                className="text-blue-600 underline font-semibold focus:outline-none"
+              >
+                {showIntern ? "Hide" : "Show"}
+              </button>
+            </div>
+            <p className="text-gray-700 mb-1">P.I. Works, Inc.</p>
+            <p className="text-gray-600 mb-1">07/2022 &ndash; 10/2022</p>
+            {showIntern && (
+              <ul className="list-disc list-inside text-gray-700 mt-2 space-y-1">
+                <li>Achieved: One of 6 out of 13 interns eligible to continue part-time.</li>
+              </ul>
+            )}
+          </div>
+        </div>
+      </section>
           <h2 className="text-2xl font-semibold mb-4">Education</h2>
           <div className="flex flex-col md:flex-row items-center gap-6 border rounded-xl shadow p-6 bg-gray-50">
             <a href="https://cs.sakarya.edu.tr/" target="_blank" rel="noopener noreferrer">
@@ -69,10 +151,10 @@ export default function Portfolio() {
             </div>
 
             <div className="border rounded-xl shadow p-4">
-              <h3 className="text-xl font-bold mb-2">Task Manager App</h3>
-              <p className="text-gray-700 mb-2">A full-stack task manager app using MERN stack.</p>
+              <h3 className="text-xl font-bold mb-2">Cash Registery App</h3>
+              <p className="text-gray-700 mb-2">This is one of my last year projects in Sakarya University written in C#</p>
               <a
-                href="https://github.com/aliyusufakbay/task-manager"
+                href="https://github.com/hemlockk/BarkodluSatis"
                 target="_blank"
                 className="inline-block border rounded px-4 py-2 text-sm hover:bg-gray-100"
               >
