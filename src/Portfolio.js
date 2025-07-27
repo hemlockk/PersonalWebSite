@@ -88,7 +88,7 @@ export default function Portfolio() {
                 {showPartTime ? "Hide" : "Show"}
               </button>
             </div>
-            <p className="text-gray-700 mb-1">P.I. Works, Inc.</p>
+            <p className="text-gray-700 mb-1">P.I. Works, Inc.  — Istanbul, Remote</p>
             <p className="text-gray-600 mb-1">10/2022 &ndash; 08/2023</p>
             {showPartTime && (
               <ul className="list-disc list-inside text-gray-700 mt-2 space-y-1">
@@ -108,12 +108,35 @@ export default function Portfolio() {
                 {showIntern ? "Hide" : "Show"}
               </button>
             </div>
-            <p className="text-gray-700 mb-1">P.I. Works, Inc.</p>
+            <p className="text-gray-700 mb-1">P.I. Works, Inc. — Istanbul, On-Site</p>
             <p className="text-gray-600 mb-1">07/2022 &ndash; 10/2022</p>
             {showIntern && (
               <ul className="list-disc list-inside text-gray-700 mt-2 space-y-1">
                 <li>Achieved: One of 6 out of 13 interns eligible to continue part-time.</li>
               </ul>
+            )}
+          </div>
+          <div className="border rounded-xl shadow p-6 bg-gray-50">
+            <div className="flex items-center justify-between mb-2">
+              <h3 className="text-xl font-bold">English Translator</h3>
+              <button
+                onClick={() => setShowIntern((prev) => !prev)}
+                className="text-blue-600 underline font-semibold focus:outline-none"
+              >
+                {showIntern ? "Hide" : "Show"}
+              </button>
+            </div>
+            <p className="text-gray-700 mb-1">Protranslate.net — Istanbul, Remote</p>
+            <p className="text-gray-600 mb-1">02/2021 &ndash; 07/2022</p>
+            {showIntern && (
+              <>
+                <ul className="list-disc list-inside text-gray-700 mt-2 space-y-1">
+                  <li>I translated official documents, homework, and websites from Turkish to English.</li>
+                  <li>During this time I completed 50 translation Jobs and 14 proofreading Jobs.</li>
+                  <li>My quality score is currently 8.17/10</li>
+                </ul>
+                <a href="https://www.protranslate.net/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline mt-2 inline-block">Company Website</a>
+              </>
             )}
           </div>
         </div>
@@ -131,7 +154,7 @@ export default function Portfolio() {
               <h3 className="text-xl font-bold mb-2">Sakarya University</h3>
               <p className="text-gray-700 mb-1">B.Sc. in Computer Science/Engineering</p>
               <p className="text-gray-700 mb-1">GPA: <span className="font-semibold">3.22 / 4.00</span></p>
-              <p className="text-gray-600">Graduated</p>
+              <p className="text-gray-600">Graduated - Sep, 2019 - Aug, 2023</p>
             </div>
           </div>
         </section>
