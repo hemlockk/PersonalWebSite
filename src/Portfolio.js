@@ -5,8 +5,7 @@ import Sakarya_logo from "./images/Sakarya_logo.jpg";
 import free_code_camp_logo from "./images/free_code_camp_logo.jpeg"; 
 import hackerrank_logo from "./images/hackerrank_logo.jpeg"; 
 import British_Council_logo from "./images/British_Council_logo.jpg";
-
-
+import CKAD from "./images/ckad.png";
 
 export default function Portfolio() {
   const [showJr, setShowJr] = React.useState(false);
@@ -44,6 +43,30 @@ export default function Portfolio() {
         <div className="space-y-6">
           <div className="border rounded-xl shadow p-6 bg-gray-50">
             <div className="flex items-center justify-between mb-2">
+              <h3 className="text-xl font-bold">Software Support Engineer</h3>
+              <button
+                onClick={() => setShowJr((prev) => !prev)}
+                className="text-blue-600 underline font-semibold focus:outline-none"
+              >
+                {showJr ? "Hide" : "Show"}
+              </button>
+            </div>
+            <p className="text-gray-700 mb-1">Worldline &mdash; Istanbul/Maslak, Hybrid</p>
+            <p className="text-gray-600 mb-1">09/2025 &ndash; Present</p>
+            {showJr && (
+              <>
+                <ul className="list-disc list-inside text-gray-700 mt-2 space-y-1">
+                  <li>Helped customers create their own payment applications using our GMP3 library and by communicating with banks through Worldline ECRPOS devices.</li>
+                  <li>Developed Windows Forms applications in C# as examples for payment application developers, demonstrating our devices’ capabilities and the correct way to develop their applications.</li>
+                  <li>Debugged C# applications in Visual Studio.</li>
+                  <li>Created documentation for FAQs, configuration explanations, required payment transaction flows, and the rules and regulations that need to be considered when developing payment applications.</li>
+               </ul>
+                <a href="https://worldline.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline mt-2 inline-block">Company Website</a>
+              </>
+            )}
+          </div>
+          <div className="border rounded-xl shadow p-6 bg-gray-50">
+            <div className="flex items-center justify-between mb-2">
               <h3 className="text-xl font-bold">Jr. Software Engineer</h3>
               <button
                 onClick={() => setShowJr((prev) => !prev)}
@@ -53,7 +76,7 @@ export default function Portfolio() {
               </button>
             </div>
             <p className="text-gray-700 mb-1">P.I. Works, Inc. &mdash; Istanbul, Remote</p>
-            <p className="text-gray-600 mb-1">08/2023 &ndash; Present</p>
+            <p className="text-gray-600 mb-1">08/2023 &ndash; 08/2025</p>
             {showJr && (
               <>
                 <ul className="list-disc list-inside text-gray-700 mt-2 space-y-1">
@@ -244,6 +267,22 @@ export default function Portfolio() {
               <span> Issued by: British Council</span>
               <span> Date issued: May, 2024</span>
               <span> Expires: May, 2026</span>
+              <span> CEFR Level: C1</span>
+              </a>
+            </div>
+            <div className="w-full">
+              <a
+                href="https://training.linuxfoundation.org/certification/verify/"
+                target="_blank"
+                className="inline-flex flex-col items-center justify-between text-center border rounded px-4 py-2 text-sm hover:bg-gray-100 h-64 w-full max-w-[240px]"
+             >
+                 <img src={CKAD} alt="CKAD" className="w-16 h-16 object-contain" />
+              
+              <span className="font-medium mt-2">IELTS</span>
+              <span> Issued by: The Linux Foundation</span>
+              <span> Date issued: Nov, 2025</span>
+              <span> Expires: Nov, 2027</span>
+              <span> Credential ID: LF-8csg5bhz1t</span>
               </a>
             </div>
           </div>
