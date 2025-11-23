@@ -6,15 +6,21 @@ import free_code_camp_logo from "./images/free_code_camp_logo.jpeg";
 import hackerrank_logo from "./images/hackerrank_logo.jpeg"; 
 import British_Council_logo from "./images/British_Council_logo.jpg";
 import CKAD from "./images/ckad.png";
-
+import background from "./images/background1.jpg";
 export default function Portfolio() {
+  const [showWL, setShowWL] = React.useState(false);
   const [showJr, setShowJr] = React.useState(false);
   const [showPartTime, setShowPartTime] = React.useState(false);
   const [showIntern, setShowIntern] = React.useState(false);
   return (
-    <main className="min-h-screen bg-white text-gray-800 p-6">
-      
-      <div className="max-w-4xl mx-auto">
+    <main className="min-h-screen text-gray-800 p-6 relative"> 
+     <div
+        className="fixed inset-0 -z-10 bg-no-repeat bg-cover bg-center"
+        style={{
+          backgroundImage: `url(${background})`,
+        }}
+      /> 
+      <div className="max-w-4xl mx-auto bg-gray-100 bg-opacity-90 rounded-lg p-8">
         <header className="mb-12 text-center">
           <h1 className="text-4xl font-bold mb-2">Ali Yusuf Akbay</h1>
           <p className="text-xl text-gray-600">Software Developer</p>
@@ -45,15 +51,15 @@ export default function Portfolio() {
             <div className="flex items-center justify-between mb-2">
               <h3 className="text-xl font-bold">Software Support Engineer</h3>
               <button
-                onClick={() => setShowJr((prev) => !prev)}
+                onClick={() => setShowWL((prev) => !prev)}
                 className="text-blue-600 underline font-semibold focus:outline-none"
               >
-                {showJr ? "Hide" : "Show"}
+                {showWL ? "Hide" : "Details"}
               </button>
             </div>
             <p className="text-gray-700 mb-1">Worldline &mdash; Istanbul/Maslak, Hybrid</p>
             <p className="text-gray-600 mb-1">09/2025 &ndash; Present</p>
-            {showJr && (
+            {showWL && (
               <>
                 <ul className="list-disc list-inside text-gray-700 mt-2 space-y-1">
                   <li>Helped customers create their own payment applications using our GMP3 library and by communicating with banks through Worldline ECRPOS devices.</li>
@@ -72,7 +78,7 @@ export default function Portfolio() {
                 onClick={() => setShowJr((prev) => !prev)}
                 className="text-blue-600 underline font-semibold focus:outline-none"
               >
-                {showJr ? "Hide" : "Show"}
+                {showJr ? "Hide" : "Details"}
               </button>
             </div>
             <p className="text-gray-700 mb-1">P.I. Works, Inc. &mdash; Istanbul, Remote</p>
@@ -108,7 +114,7 @@ export default function Portfolio() {
                 onClick={() => setShowPartTime((prev) => !prev)}
                 className="text-blue-600 underline font-semibold focus:outline-none"
               >
-                {showPartTime ? "Hide" : "Show"}
+                {showPartTime ? "Hide" : "Details"}
               </button>
             </div>
             <p className="text-gray-700 mb-1">P.I. Works, Inc.  — Istanbul, Remote</p>
@@ -128,7 +134,7 @@ export default function Portfolio() {
                 onClick={() => setShowIntern((prev) => !prev)}
                 className="text-blue-600 underline font-semibold focus:outline-none"
               >
-                {showIntern ? "Hide" : "Show"}
+                {showIntern ? "Hide" : "Details"}
               </button>
             </div>
             <p className="text-gray-700 mb-1">P.I. Works, Inc. — Istanbul, On-Site</p>
@@ -146,7 +152,7 @@ export default function Portfolio() {
                 onClick={() => setShowIntern((prev) => !prev)}
                 className="text-blue-600 underline font-semibold focus:outline-none"
               >
-                {showIntern ? "Hide" : "Show"}
+                {showIntern ? "Hide" : "Details"}
               </button>
             </div>
             <p className="text-gray-700 mb-1">Protranslate.net — Istanbul, Remote</p>
@@ -278,7 +284,7 @@ export default function Portfolio() {
              >
                  <img src={CKAD} alt="CKAD" className="w-16 h-16 object-contain" />
               
-              <span className="font-medium mt-2">IELTS</span>
+              <span className="font-medium mt-2">Certified Kubernetes Application Developer</span>
               <span> Issued by: The Linux Foundation</span>
               <span> Date issued: Nov, 2025</span>
               <span> Expires: Nov, 2027</span>
