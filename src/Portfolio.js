@@ -59,17 +59,15 @@ export default function Portfolio() {
             </div>
             <p className="text-gray-700 mb-1">Worldline &mdash; Istanbul/Maslak, Hybrid</p>
             <p className="text-gray-600 mb-1">09/2025 &ndash; Present</p>
-            {showWL && (
-              <>
-                <ul className="list-disc list-inside text-gray-700 mt-2 space-y-1">
-                  <li>Helped customers create their own payment applications using our GMP3 library and by communicating with banks through Worldline ECRPOS devices.</li>
-                  <li>Developed Windows Forms applications in C# as examples for payment application developers, demonstrating our devices’ capabilities and the correct way to develop their applications.</li>
-                  <li>Debugged C# applications in Visual Studio.</li>
-                  <li>Created documentation for FAQs, configuration explanations, required payment transaction flows, and the rules and regulations that need to be considered when developing payment applications.</li>
-               </ul>
-                <a href="https://worldline.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline mt-2 inline-block">Company Website</a>
-              </>
-            )}
+            <div className={`transition-all duration-300 ease-in-out overflow-hidden ${showWL ? 'max-h-96 opacity-100 translate-y-0' : 'max-h-0 opacity-0 -translate-y-2'}`}>
+              <ul className="list-disc list-inside text-gray-700 mt-2 space-y-1">
+                <li>Helped customers create their own payment applications using our GMP3 library and by communicating with banks through Worldline ECRPOS devices.</li>
+                <li>Developed Windows Forms applications in C# as examples for payment application developers, demonstrating our devices’ capabilities and the correct way to develop their applications.</li>
+                <li>Debugged C# applications in Visual Studio.</li>
+                <li>Created documentation for FAQs, configuration explanations, required payment transaction flows, and the rules and regulations that need to be considered when developing payment applications.</li>
+              </ul>
+              <a href="https://worldline.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline mt-2 inline-block">Company Website</a>
+            </div>
           </div>
           <div className="border rounded-xl shadow p-6 bg-gray-50">
             <div className="flex items-center justify-between mb-2">
@@ -83,29 +81,27 @@ export default function Portfolio() {
             </div>
             <p className="text-gray-700 mb-1">P.I. Works, Inc. &mdash; Istanbul, Remote</p>
             <p className="text-gray-600 mb-1">08/2023 &ndash; 08/2025</p>
-            {showJr && (
-              <>
-                <ul className="list-disc list-inside text-gray-700 mt-2 space-y-1">
-                  <li>Communicated with a global client base regarding products and solutions over Jira.</li>
-                  <li>Managed SaaS applications supporting dynamic web services on Windows & Linux (CentOS, RedHat).</li>
-                  <li>Resolved complex software issues using advanced debugging and troubleshooting methods.</li>
-                  <li>Automated operations using PL/SQL, bash, and PowerShell to improve response times and reduce manual work.</li>
-                  <li>Designed and optimized complex SQL queries for data analysis and monitoring.</li>
-                  <li>Created Python tools to facilitate support operations and ease on-call duties.</li>
-                  <li>Deployed software upgrades, installed microservices in Docker containers, and configured REST API endpoints.</li>
-                  <li>Optimized and managed ETL operations for stable and reliable data flow.</li>
-                  <li>Developed networking solutions, including load balancing with HAProxy and firewall rules for secure data flow.</li>
-                  <li>Utilized monitoring and alerting tools like Zabbix to proactively address system issues.</li>
-                  <li>Diagnosed performance bottlenecks and system issues by analyzing logs and metrics.</li>
-                  <li>Led a team through a successful migration project from Oracle to ClickHouse database.</li>
-                  <li>Collaborated with other teams on software development, testing, and release.</li>
-                  <li>Developed and implemented timely solutions & workarounds in line with strict SLAs.</li>
-                  <li>Utilized Ansible for change and configuration management to streamline setup processes.</li>
-                  <li>Shared expertise and documented best practices on Confluence, actively contributing to team knowledge exchange.</li>
-                </ul>
-                <a href="https://piworks.net/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline mt-2 inline-block">Company Website</a>
-              </>
-            )}
+            <div className={`transition-all duration-300 ease-in-out overflow-hidden ${showJr ? 'max-h-[1200px] opacity-100 translate-y-0' : 'max-h-0 opacity-0 -translate-y-2'}`}>
+              <ul className="list-disc list-inside text-gray-700 mt-2 space-y-1">
+                <li>Communicated with a global client base regarding products and solutions over Jira.</li>
+                <li>Managed SaaS applications supporting dynamic web services on Windows & Linux (CentOS, RedHat).</li>
+                <li>Resolved complex software issues using advanced debugging and troubleshooting methods.</li>
+                <li>Automated operations using PL/SQL, bash, and PowerShell to improve response times and reduce manual work.</li>
+                <li>Designed and optimized complex SQL queries for data analysis and monitoring.</li>
+                <li>Created Python tools to facilitate support operations and ease on-call duties.</li>
+                <li>Deployed software upgrades, installed microservices in Docker containers, and configured REST API endpoints.</li>
+                <li>Optimized and managed ETL operations for stable and reliable data flow.</li>
+                <li>Developed networking solutions, including load balancing with HAProxy and firewall rules for secure data flow.</li>
+                <li>Utilized monitoring and alerting tools like Zabbix to proactively address system issues.</li>
+                <li>Diagnosed performance bottlenecks and system issues by analyzing logs and metrics.</li>
+                <li>Led a team through a successful migration project from Oracle to ClickHouse database.</li>
+                <li>Collaborated with other teams on software development, testing, and release.</li>
+                <li>Developed and implemented timely solutions & workarounds in line with strict SLAs.</li>
+                <li>Utilized Ansible for change and configuration management to streamline setup processes.</li>
+                <li>Shared expertise and documented best practices on Confluence, actively contributing to team knowledge exchange.</li>
+              </ul>
+              <a href="https://piworks.net/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline mt-2 inline-block">Company Website</a>
+            </div>
           </div>
           <div className="border rounded-xl shadow p-6 bg-gray-50">
             <div className="flex items-center justify-between mb-2">
@@ -119,13 +115,13 @@ export default function Portfolio() {
             </div>
             <p className="text-gray-700 mb-1">P.I. Works, Inc.  — Istanbul, Remote</p>
             <p className="text-gray-600 mb-1">10/2022 &ndash; 08/2023</p>
-            {showPartTime && (
+            <div className={`transition-all duration-300 ease-in-out overflow-hidden ${showPartTime ? 'max-h-60 opacity-100 translate-y-0' : 'max-h-0 opacity-0 -translate-y-2'}`}>
               <ul className="list-disc list-inside text-gray-700 mt-2 space-y-1">
                 <li>Worked collaboratively to meet KPI targets.</li>
                 <li>Successfully passed a final 4-stage interview after 5 months.</li>
                 <li>Achieved: One of 2 out of 6 candidates who qualified for a full-time position.</li>
               </ul>
-            )}
+            </div>
           </div>
           <div className="border rounded-xl shadow p-6 bg-gray-50">
             <div className="flex items-center justify-between mb-2">
@@ -139,11 +135,11 @@ export default function Portfolio() {
             </div>
             <p className="text-gray-700 mb-1">P.I. Works, Inc. — Istanbul, On-Site</p>
             <p className="text-gray-600 mb-1">07/2022 &ndash; 10/2022</p>
-            {showIntern && (
+            <div className={`transition-all duration-300 ease-in-out overflow-hidden ${showIntern ? 'max-h-60 opacity-100 translate-y-0' : 'max-h-0 opacity-0 -translate-y-2'}`}>
               <ul className="list-disc list-inside text-gray-700 mt-2 space-y-1">
                 <li>Achieved: One of 6 out of 13 interns eligible to continue part-time.</li>
               </ul>
-            )}
+            </div>
           </div>
           <div className="border rounded-xl shadow p-6 bg-gray-50">
             <div className="flex items-center justify-between mb-2">
@@ -157,16 +153,14 @@ export default function Portfolio() {
             </div>
             <p className="text-gray-700 mb-1">Protranslate.net — Istanbul, Remote</p>
             <p className="text-gray-600 mb-1">02/2021 &ndash; 07/2022</p>
-            {showIntern && (
-              <>
-                <ul className="list-disc list-inside text-gray-700 mt-2 space-y-1">
-                  <li>I translated official documents, homework, and websites from Turkish to English.</li>
-                  <li>During this time I completed 50 translation Jobs and 14 proofreading Jobs.</li>
-                  <li>My quality score is currently 8.17/10</li>
-                </ul>
-                <a href="https://www.protranslate.net/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline mt-2 inline-block">Company Website</a>
-              </>
-            )}
+            <div className={`transition-all duration-300 ease-in-out overflow-hidden ${showIntern ? 'max-h-60 opacity-100 translate-y-0' : 'max-h-0 opacity-0 -translate-y-2'}`}>
+              <ul className="list-disc list-inside text-gray-700 mt-2 space-y-1">
+                <li>I translated official documents, homework, and websites from Turkish to English.</li>
+                <li>During this time I completed 50 translation Jobs and 14 proofreading Jobs.</li>
+                <li>My quality score is currently 8.17/10</li>
+              </ul>
+              <a href="https://www.protranslate.net/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline mt-2 inline-block">Company Website</a>
+            </div>
           </div>
         </div>
       </section>
