@@ -163,26 +163,27 @@ export default function Portfolio() {
             </div>
           </div>
         </div>
-      </section>
-          <h2 className="text-2xl font-semibold mb-4">Education</h2>
-          <div className="flex flex-col md:flex-row items-center gap-6 border rounded-xl shadow p-6 bg-gray-50">
-            <a href="https://cs.sakarya.edu.tr/" target="_blank" rel="noopener noreferrer">
-              <img
-                src={Sakarya_logo}
-                alt="Sakarya University Logo"
-                className="w-24 h-24 object-contain rounded mb-4 md:mb-0"
-              />
-            </a>
-            <div>
-              <h3 className="text-xl font-bold mb-2">Sakarya University</h3>
-              <p className="text-gray-700 mb-1">B.Sc. in Computer Science/Engineering</p>
-              <p className="text-gray-700 mb-1">GPA: <span className="font-semibold">3.22 / 4.00</span></p>
-              <p className="text-gray-600">Graduated - Sep, 2019 - Aug, 2023</p>
-            </div>
-          </div>
-        </section>
-        <section className="mb-12">
+          </section>
+                  <h2 className="text-2xl font-semibold mb-4">Education</h2>
+                  <div className="flex flex-col md:flex-row items-center gap-6 border rounded-xl shadow p-6 bg-gray-50">
+                    <a href="https://cs.sakarya.edu.tr/" target="_blank" rel="noopener noreferrer">
+                      <img
+                        src={Sakarya_logo}
+                        alt="Sakarya University Logo"
+                        className="w-24 h-24 object-contain rounded mb-4 md:mb-0"
+                      />
+                    </a>
+                    <div>
+                      <h3 className="text-xl font-bold mb-2">Sakarya University</h3>
+                      <p className="text-gray-700 mb-1">B.Sc. in Computer Science/Engineering</p>
+                      <p className="text-gray-700 mb-1">GPA: <span className="font-semibold">3.22 / 4.00</span></p>
+                      <p className="text-gray-600">Graduated - Sep, 2019 - Aug, 2023</p>
+                    </div>
+                  </div>
+                </section>
+                <section className="mb-12">
           <h2 className="text-2xl font-semibold mb-4">Projects</h2>
+          
           <div className="grid gap-6 md:grid-cols-2">
             <div className="border rounded-xl shadow p-4">
               <h3 className="text-xl font-bold mb-2">Personal Portfolio</h3>
@@ -207,8 +208,21 @@ export default function Portfolio() {
                 View Code
               </a>
             </div>
+
+            <div className="border rounded-xl shadow p-4">
+              <h3 className="text-xl font-bold mb-2">Midas Tax Calculation</h3>
+              <p className="text-gray-700 mb-2">Tax calculation website for foreign stock trade from Turkey.</p>
+              <a
+                href="https://github.com/hemlockk/MidasTaxCalculatorSite"
+                target="_blank"
+                className="inline-block border rounded px-4 py-2 text-sm hover:bg-gray-100"
+              >
+                View Code
+              </a>
+            </div>
           </div>
         </section>
+
 
         <section className="mb-12">
           <h2 className="text-2xl font-semibold mb-4">Certifications</h2>
