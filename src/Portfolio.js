@@ -6,6 +6,7 @@ import free_code_camp_logo from "./images/free_code_camp_logo.jpeg";
 import hackerrank_logo from "./images/hackerrank_logo.jpeg"; 
 import British_Council_logo from "./images/British_Council_logo.jpg";
 import CKAD from "./images/ckad.png";
+import Transcript from "./images/transcript.pdf";
 import background from "./images/background1.jpg";
 export default function Portfolio() {
   const [showWL, setShowWL] = React.useState(false);
@@ -178,6 +179,14 @@ export default function Portfolio() {
                       <p className="text-gray-700 mb-1">B.Sc. in Computer Science/Engineering</p>
                       <p className="text-gray-700 mb-1">GPA: <span className="font-semibold">3.22 / 4.00</span></p>
                       <p className="text-gray-600">Graduated - Sep, 2019 - Aug, 2023</p>
+                      <a
+                        href={Transcript}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block mt-4 px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition"
+                      >
+                        View Transcript
+                      </a>
                     </div>
                   </div>
                 </section>
@@ -191,7 +200,7 @@ export default function Portfolio() {
               <a
                 href="https://github.com/hemlockk/PersonalWebSite"
                 target="_blank"
-                className="inline-block border rounded px-4 py-2 text-sm hover:bg-gray-100"
+                className="inline-block mt-4 px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition"
               >
                 View Code
               </a>
@@ -203,7 +212,7 @@ export default function Portfolio() {
               <a
                 href="https://github.com/hemlockk/BarkodluSatis"
                 target="_blank"
-                className="inline-block border rounded px-4 py-2 text-sm hover:bg-gray-100"
+                className="inline-block mt-4 px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition"
               >
                 View Code
               </a>
@@ -215,7 +224,7 @@ export default function Portfolio() {
               <a
                 href="https://github.com/hemlockk/MidasTaxCalculatorSite"
                 target="_blank"
-                className="inline-block border rounded px-4 py-2 text-sm hover:bg-gray-100"
+                className="inline-block mt-4 px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition"
               >
                 View Code
               </a>
@@ -272,7 +281,6 @@ export default function Portfolio() {
             <div className="w-full">
               <a
                 href="/ielts.pdf"
-                download
                 className="inline-flex flex-col items-center justify-between text-center border rounded px-4 py-2 text-sm hover:bg-gray-100 h-64 w-full max-w-[240px]"
               >
                  <img src={British_Council_logo} alt="IELTS" className="w-16 h-16 object-contain" />
