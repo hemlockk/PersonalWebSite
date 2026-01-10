@@ -13,6 +13,7 @@ export default function Portfolio() {
   const [showJr, setShowJr] = React.useState(false);
   const [showPartTime, setShowPartTime] = React.useState(false);
   const [showIntern, setShowIntern] = React.useState(false);
+  const [showProtranslate, setShowProtranslate] = React.useState(false);
   return (
     <main className="min-h-screen text-gray-800 p-6 relative"> 
      <div
@@ -146,15 +147,15 @@ export default function Portfolio() {
             <div className="flex items-center justify-between mb-2">
               <h3 className="text-xl font-bold">English Translator</h3>
               <button
-                onClick={() => setShowIntern((prev) => !prev)}
+                onClick={() => setShowProtranslate((prev) => !prev)}
                 className="text-blue-600 underline font-semibold focus:outline-none"
               >
-                {showIntern ? "Hide" : "Details"}
+                {showProtranslate ? "Hide" : "Details"}
               </button>
             </div>
             <p className="text-gray-700 mb-1">Protranslate.net — Istanbul, Remote</p>
             <p className="text-gray-600 mb-1">02/2021 &ndash; 07/2022</p>
-            <div className={`transition-all duration-300 ease-in-out overflow-hidden ${showIntern ? 'max-h-60 opacity-100 translate-y-0' : 'max-h-0 opacity-0 -translate-y-2'}`}>
+            <div className={`transition-all duration-300 ease-in-out overflow-hidden ${showProtranslate ? 'max-h-60 opacity-100 translate-y-0' : 'max-h-0 opacity-0 -translate-y-2'}`}>
               <ul className="list-disc list-inside text-gray-700 mt-2 space-y-1">
                 <li>I translated official documents, homework, and websites from Turkish to English.</li>
                 <li>During this time I completed 50 translation Jobs and 14 proofreading Jobs.</li>
