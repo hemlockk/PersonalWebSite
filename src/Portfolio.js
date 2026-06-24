@@ -5,7 +5,7 @@ import Sakarya_logo from "./images/Sakarya_logo.jpg";
 import free_code_camp_logo from "./images/free_code_camp_logo.jpeg"; 
 import hackerrank_logo from "./images/hackerrank_logo.jpeg"; 
 import British_Council_logo from "./images/British_Council_logo.jpg";
-import ETS_logo from "./images/toefl.jpg";
+import ETS_logo from "./images/toefl.png";
 import CKAD from "./images/ckad.png";
 import Transcript from "./images/transcript.pdf";
 import background from "./images/background1.jpg";
