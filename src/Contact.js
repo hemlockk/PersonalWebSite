@@ -2,18 +2,8 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 export default function Contact() {
-  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
   const navigate = useNavigate();
 
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const mailtoLink = `mailto:ali.yusuf01@hotmail.com?subject=Message from ${formData.name} (${formData.email})&body=${encodeURIComponent(formData.message)}`;
-    window.location.href = mailtoLink;
-  };
 
   return (
     <div className="max-w-xl mx-auto p-8 bg-white shadow-lg rounded-lg mt-10">
