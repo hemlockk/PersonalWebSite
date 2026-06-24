@@ -1,6 +1,6 @@
 {
   "build": "react-scripts build",
-  "build:deploy": "set CI=false && react-scripts build"
+  "build:deploy": "set CI=false && react-scripts build",
   "name": "aliyusufakbay",
   "version": "0.1.0",
   "private": true,
