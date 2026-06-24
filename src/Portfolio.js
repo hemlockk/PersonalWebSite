@@ -5,6 +5,7 @@ import Sakarya_logo from "./images/Sakarya_logo.jpg";
 import free_code_camp_logo from "./images/free_code_camp_logo.jpeg"; 
 import hackerrank_logo from "./images/hackerrank_logo.jpeg"; 
 import British_Council_logo from "./images/British_Council_logo.jpg";
+import ETS_logo from "./images/toefl.jpg";
 import CKAD from "./images/ckad.png";
 import Transcript from "./images/transcript.pdf";
 import background from "./images/background1.jpg";
@@ -306,6 +307,20 @@ export default function Portfolio() {
               <span> Date issued: Nov, 2025</span>
               <span> Expires: Nov, 2027</span>
               <span> Credential ID: LF-8csg5bhz1t</span>
+              </a>
+            </div>
+            <div className="w-full">
+              <a
+                href="/TOEFL.pdf"
+                className="inline-flex flex-col items-center justify-between text-center border rounded px-4 py-2 text-sm hover:bg-gray-100 h-64 w-full max-w-[240px]"
+              >
+                 <img src={ETS_logo} alt="TOEFL" className="w-16 h-16 object-contain" />
+              
+              <span className="font-medium mt-2">TOEFL</span>
+              <span> Issued by: ETS</span>
+              <span> Date issued: June, 2026</span>
+              <span> Expires: June, 2028</span>
+              <span> CEFR Level: C1</span>
               </a>
             </div>
           </div>
