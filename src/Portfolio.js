@@ -31,10 +31,10 @@ export default function Portfolio() {
             <a href="mailto:ali.yusuf01@hotmail.com" className="hover:text-blue-500">
               <Mail />
             </a>
-            <a href="https://github.com/hemlockk" target="_blank" className="hover:text-gray-800">
+            <a href="https://github.com/hemlockk" target="_blank" rel="noreferrer" className="hover:text-gray-800">
               <Github />
             </a>
-            <a href="https://www.linkedin.com/in/ali-yusuf-akbay-b95552209/" target="_blank" className="hover:text-blue-700">
+            <a href="https://www.linkedin.com/in/ali-yusuf-akbay-b95552209/" target="_blank" rel="noreferrer" className="hover:text-blue-700">
               <Linkedin />
             </a>
           </div>
@@ -69,7 +69,7 @@ export default function Portfolio() {
                 <li>Debugged C# applications in Visual Studio.</li>
                 <li>Created documentation for FAQs, configuration explanations, required payment transaction flows, and the rules and regulations that need to be considered when developing payment applications.</li>
               </ul>
-              <a href="https://worldline.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline mt-2 inline-block">Company Website</a>
+              <a href="https://worldline.com/" target="_blank" rel="noreferrer" className="text-blue-600 underline mt-2 inline-block">Company Website</a>
             </div>
           </div>
           <div className="border rounded-xl shadow p-6 bg-gray-50">
@@ -201,7 +201,7 @@ export default function Portfolio() {
               <p className="text-gray-700 mb-2">A React-based portfolio showcasing my projects and resume.</p>
               <a
                 href="https://github.com/hemlockk/PersonalWebSite"
-                target="_blank"
+                target="_blank" rel="noreferrer"
                 className="inline-block mt-4 px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition"
               >
                 View Code
@@ -213,7 +213,7 @@ export default function Portfolio() {
               <p className="text-gray-700 mb-2">This is one of my last year projects in Sakarya University written in C#</p>
               <a
                 href="https://github.com/hemlockk/BarkodluSatis"
-                target="_blank"
+                target="_blank" rel="noreferrer"
                 className="inline-block mt-4 px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition"
               >
                 View Code
@@ -225,7 +225,7 @@ export default function Portfolio() {
               <p className="text-gray-700 mb-2">Tax calculation website for foreign stock trade from Turkey.</p>
               <a
                 href="https://github.com/hemlockk/MidasTaxCalculatorSite"
-                target="_blank"
+                target="_blank" rel="noreferrer"
                 className="inline-block mt-4 px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition"
               >
                 View Code
@@ -241,7 +241,7 @@ export default function Portfolio() {
             <div className="w-full">
               <a
                 href="https://www.credly.com/badges/8c585abd-2007-42ca-9f64-8f82eccd7fc8/linked_in_profile"
-                target="_blank"
+                target="_blank" rel="noreferrer"
                 className="inline-flex flex-col items-center justify-between text-center border rounded px-4 py-2 text-sm hover:bg-gray-100 h-64 w-full max-w-[240px]"
               >
                 <img src={AWSCloudPracticioner} alt="AWS Cloud Practitioner" className="w-16 h-16 object-contain" />
@@ -254,7 +254,7 @@ export default function Portfolio() {
             <div className="w-full">
               <a
                 href="https://www.freecodecamp.org/certification/fcc49575b09-50b7-46a0-ac74-12b27dbf9293/javascript-algorithms-and-data-structures"
-                target="_blank"
+                target="_blank" rel="noreferrer"
                 className="inline-flex flex-col items-center justify-between text-center border rounded px-4 py-2 text-sm hover:bg-gray-100 h-64 w-full max-w-[240px]"
               >
                 <img src={free_code_camp_logo} alt="JavaScript Algorithms and Data Structures" className="w-16 h-16 object-contain" />
@@ -267,7 +267,7 @@ export default function Portfolio() {
             <div className="w-full">
               <a
                 href="https://www.hackerrank.com/certificates/ef819e7c20ec"
-                target="_blank"
+                target="_blank" rel="noreferrer"
                 className="inline-flex flex-col items-center justify-between text-center border rounded px-4 py-2 text-sm hover:bg-gray-100 h-64 w-full max-w-[240px]"
               >
                 <img src={hackerrank_logo} alt="SQL (Advanced) Certificate" className="w-16 h-16 object-contain" />
@@ -283,6 +283,7 @@ export default function Portfolio() {
             <div className="w-full">
               <a
                 href="/ielts.pdf"
+                target="_blank" rel="noreferrer"
                 className="inline-flex flex-col items-center justify-between text-center border rounded px-4 py-2 text-sm hover:bg-gray-100 h-64 w-full max-w-[240px]"
               >
                  <img src={British_Council_logo} alt="IELTS" className="w-16 h-16 object-contain" />
@@ -297,7 +298,7 @@ export default function Portfolio() {
             <div className="w-full">
               <a
                 href="https://training.linuxfoundation.org/certification/verify/"
-                target="_blank"
+                target="_blank" rel="noreferrer"
                 className="inline-flex flex-col items-center justify-between text-center border rounded px-4 py-2 text-sm hover:bg-gray-100 h-64 w-full max-w-[240px]"
              >
                  <img src={CKAD} alt="CKAD" className="w-16 h-16 object-contain" />
