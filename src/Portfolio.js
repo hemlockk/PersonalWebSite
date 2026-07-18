@@ -64,10 +64,13 @@ export default function Portfolio() {
             <p className="text-gray-600 mb-1">09/2025 &ndash; Present</p>
             <div className={`transition-all duration-300 ease-in-out overflow-hidden ${showWL ? 'max-h-96 opacity-100 translate-y-0' : 'max-h-0 opacity-0 -translate-y-2'}`}>
               <ul className="list-disc list-inside text-gray-700 mt-2 space-y-1">
-                <li>Helped customers create their own payment applications using our GMP3 library and by communicating with banks through Worldline ECRPOS devices.</li>
-                <li>Developed Windows Forms applications in C# as examples for payment application developers, demonstrating our devices’ capabilities and the correct way to develop their applications.</li>
-                <li>Debugged C# applications in Visual Studio.</li>
-                <li>Created documentation for FAQs, configuration explanations, required payment transaction flows, and the rules and regulations that need to be considered when developing payment applications.</li>
+                <li>Supported customers building GMP3-based payment applications for ECR/POS devices, and created technical documentation
+covering configurations, payment flows, and regulatory rules</li>
+                <li>Developed, debugged, and troubleshot C# Windows Forms sample applications in Visual Studio, demonstrating device
+capabilities and payment flows</li>
+                <li>Contributed to an Android POS payment simulator built in Java for testing and integration</li>
+                <li>Developed a Node.js/Express demo application implementing TSM Gateway protocol endpoints for restaurant-ECR device
+integration and payment flows</li>
               </ul>
               <a href="https://worldline.com/" target="_blank" rel="noreferrer" className="text-blue-600 underline mt-2 inline-block">Company Website</a>
             </div>
@@ -86,22 +89,20 @@ export default function Portfolio() {
             <p className="text-gray-600 mb-1">08/2023 &ndash; 08/2025</p>
             <div className={`transition-all duration-300 ease-in-out overflow-hidden ${showJr ? 'max-h-[1200px] opacity-100 translate-y-0' : 'max-h-0 opacity-0 -translate-y-2'}`}>
               <ul className="list-disc list-inside text-gray-700 mt-2 space-y-1">
-                <li>Communicated with a global client base regarding products and solutions over Jira.</li>
-                <li>Managed SaaS applications supporting dynamic web services on Windows & Linux (CentOS, RedHat).</li>
+                <li>Communicated with a global client base regarding products and solutions over Jira, delivering timely fixes and workarounds in
+line with strict SLAs</li>
+                <li>Managed and supported SaaS platforms across Windows/Linux (CentOS, RedHat) and AWS cloud environments</li>
                 <li>Resolved complex software issues using advanced debugging and troubleshooting methods.</li>
-                <li>Automated operations using PL/SQL, bash, and PowerShell to improve response times and reduce manual work.</li>
-                <li>Designed and optimized complex SQL queries for data analysis and monitoring.</li>
-                <li>Created Python tools to facilitate support operations and ease on-call duties.</li>
-                <li>Deployed software upgrades, installed microservices in Docker containers, and configured REST API endpoints.</li>
-                <li>Optimized and managed ETL operations for stable and reliable data flow.</li>
-                <li>Developed networking solutions, including load balancing with HAProxy and firewall rules for secure data flow.</li>
-                <li>Utilized monitoring and alerting tools like Zabbix to proactively address system issues.</li>
-                <li>Diagnosed performance bottlenecks and system issues by analyzing logs and metrics.</li>
-                <li>Led a team through a successful migration project from Oracle to ClickHouse database.</li>
-                <li>Collaborated with other teams on software development, testing, and release.</li>
-                <li>Developed and implemented timely solutions & workarounds in line with strict SLAs.</li>
-                <li>Utilized Ansible for change and configuration management to streamline setup processes.</li>
-                <li>Shared expertise and documented best practices on Confluence, actively contributing to team knowledge exchange.</li>
+                <li>Assisted in migrating PL/SQL-based optimizer applications to C# executables for sandboxing and isolated testing purposes</li>
+                <li>Designed and optimized complex SQL queries for effective data analysis and monitoring.</li>
+                <li>Automated critical operations using PL/SQL, bash, PowerShell, and internal Python tools to improve response times and reduce
+manual on-call workload</li>
+                <li>Deployed microservices via Docker and Ansible, configuring REST API endpoints and streamlining change management</li>
+                <li>Built networking and monitoring infrastructure — HAProxy load balancing, firewall rules, and Zabbix alerting — and diagnosed
+performance bottlenecks through log and metrics analysis</li>
+                <li>Optimized and managed ETL operations to ensure stable, reliable data flow</li>
+                <li>Led a team through a successful database migration from Oracle to ClickHouse, and shared best practices on Confluence to
+support team knowledge exchange</li>
               </ul>
               <a href="https://piworks.net/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline mt-2 inline-block">Company Website</a>
             </div>
