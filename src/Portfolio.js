@@ -64,11 +64,11 @@ export default function Portfolio() {
             <p className="text-gray-600 mb-1">09/2025 &ndash; Present</p>
             <div className={`transition-all duration-300 ease-in-out overflow-hidden ${showWL ? 'max-h-96 opacity-100 translate-y-0' : 'max-h-0 opacity-0 -translate-y-2'}`}>
               <ul className="list-disc list-inside text-gray-700 mt-2 space-y-1">
-                <li>Supported customers building <strong>GMP3-based</strong> payment applications for <strong>ECR/POS</strong> devices, and created <strong>technical documentation</strong>
-covering configurations, payment flows, and regulatory rules</li>
+                <li>Supported dozens of external customers building <strong>ECR/POS</strong> payment applications, resolving both device configuration/integration issues and bugs in client-side code against our <strong>SDK</strong></li>
+                <li>Authored <strong>technical documentation</strong> covering device configurations, payment flows, and regulatory rules — delivered directly to external clients and partners as their primary integration reference</li>
                 <li>Developed, debugged, and troubleshot <strong>C#</strong> Windows Forms sample applications in <strong>Visual Studio</strong>, demonstrating device
 capabilities and payment flows</li>
-                <li>Contributed to an Android POS payment simulator built in <strong>Java</strong> for testing and integration</li>
+                <li>Built the <strong>UI</strong> and payment-flow logic for an <strong>Android POS</strong> simulator in <strong>Java</strong>, integrating with the device's internal fiscal service — provided to clients/partners for integration testing</li>
                 <li>Developed a <strong>Node.js/Express</strong> demo application implementing TSM Gateway protocol endpoints for restaurant-ECR device
 integration and payment flows</li>
               </ul>
