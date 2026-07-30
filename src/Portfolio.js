@@ -104,7 +104,7 @@ function ExperienceCard({ title, company, dates, open, onToggle, children, links
 }
 
 export default function Portfolio() {
-  const [showWL, setShowWL] = useState(true);
+  const [showWL, setShowWL] = useState(false);
   const [showJr, setShowJr] = useState(false);
   const [showPartTime, setShowPartTime] = useState(false);
   const [showIntern, setShowIntern] = useState(false);
