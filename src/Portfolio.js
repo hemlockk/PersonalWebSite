@@ -42,7 +42,7 @@ export default function Portfolio() {
         <section>
           <h2 className="text-2xl font-semibold mb-4">About Me</h2>
           <p className="text-gray-700 leading-relaxed">
-            I graduated from Sakarya University with a degree in Computer Engineering and a GPA of 3.22/4. During my studies, I gained early work experience through online translation at Protranslate during the pandemic. In July 2022, I joined P.I. Works as a Software Support Engineer Intern. I continued in a part-time role throughout my senior year and transitioned to a full-time position upon graduation, becoming an integral part of the team. I'm passionate about solving technical challenges and continuously developing my skills in software and systems support.
+            Software Engineer with 3+ years across payment systems, SaaS support, and infrastructure automation. Currently building and documenting payment applications for ECR/POS devices at Worldline, spanning C#, Java, and Node.js. Previously supported and automated SaaS platforms at scale — PL/SQL to C# migrations, Docker/Ansible deployments, and a full Oracle-to-ClickHouse database migration. Fluent in Turkish and English (officially certified), comfortable working directly with global clients under SLA pressure.
           </p>
         </section>
         <br></br>
